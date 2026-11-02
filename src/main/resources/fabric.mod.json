@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "overcrafted",
+	"version": "${version}",
+	"name": "overcrafted",
+	"description": "Cooking game in Minecraft",
+	"authors": [
+		"Benosaurus"
+	],
+	"contact": {
+		"homepage": "https://github.com/Ben0saurus",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT-License",
+	"icon": "assets/overcrafted/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.benosaurus.overcrafted.Overcrafted"
+		],
+		"fabric-datagen": [
+			"me.benosaurus.overcrafted.OvercraftedDataGenerator"
+		]
+	},
+	"mixins": [
+		"overcrafted.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
